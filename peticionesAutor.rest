@@ -1,0 +1,26 @@
+@url = http://localhost:3000/api
+
+###
+# Autor Endpoints
+###
+
+# Obtener todos los autor
+GET {{url}}/autor
+
+###
+
+# Obtener un autor por ID (reemplaza :autorId con un ID válido)
+GET {{url}}/autor/:autorId
+
+###∫
+
+# Crear un nuevo autor
+POST {{url}}/autor
+Content-Type: application/json
+
+{
+    "nombre": "Autor Ejemplo",
+    "email": "autor@example.com",
+    "imagen": "https://url_de_imagen.com/autor.jpg"
+}
+
