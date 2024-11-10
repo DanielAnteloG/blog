@@ -1,5 +1,3 @@
-// Example controller
-// controllers/postsController.js
 const { selectAll, selectById, insertPost, selectPostsByAuthor } = require('../models/post.model');
 
 const getPosts = async (req, res, next) => {

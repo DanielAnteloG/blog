@@ -1,4 +1,4 @@
-// controllers/autoresController.js
+
 const { selectAll, selectById, insertAutor } = require('../models/autor.model');
 
 const getAutores = async (req, res, next) => {
