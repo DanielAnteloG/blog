@@ -1,0 +1,23 @@
+@url = http://localhost:3000/api
+
+
+# Obtener todos los autor
+GET {{url}}/autor
+
+###
+
+# Obtener un autor por ID 
+GET {{url}}/autor/2
+
+###
+
+# Crear un nuevo autor
+POST {{url}}/autor
+Content-Type: application/json
+
+{
+    "nombre": "Amigo Juan",
+    "email": "juan@example.com",
+    "imagen": "https://url_de_imagen.com/autor.jpg"
+}
+

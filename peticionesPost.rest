@@ -1,0 +1,28 @@
+@url = http://localhost:3000/api
+
+
+# Obtener todos los posts
+GET {{url}}/post
+
+###
+
+# Obtener un post por ID (reemplaza :postId con un ID válido)
+GET {{url}}/post/:postId
+
+###
+
+# Crear un nuevo post
+POST {{url}}/post
+Content-Type: application/json
+
+{
+    "titulo": "Nuevo Post de amigo Juan",
+    "descripcion": "Este Juan y sus aventuras",
+    "categoria": "Ciencia Ficcion",
+    "autor_id": "2"
+}
+
+
+###
+# Obtener todos los posts de un autor específico (reemplaza :autorId con un ID válido)
+GET {{url}}/post/autor/2
